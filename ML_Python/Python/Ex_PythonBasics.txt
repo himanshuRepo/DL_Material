@@ -1,0 +1,366 @@
+
+=========================== First Set =========================
+#-------------------------------------------------------------
+# Ex 1: Print “Hello World”
+# Purpose : How to Print, how to run python PROGRAM
+#-------------------------------------------------------------
+
+print("Hello World")
+
+
+#-------------------------------------------------------------
+# Ex 2: Add Two Number
+# Purpose : How to delclare variable, Add and Print the Value
+#-------------------------------------------------------------
+
+a = 10
+b = 220
+c = a + b
+print("Sum : ", a, " + ", b, " = ", c, "\n")
+
+
+#-------------------------------------------------------------
+# Ex 3: Add Two numbers and input from user
+# Purpose : How to Take input from user, typecast
+# NOTE     : Converation (type casting) is required when input is taken
+#            from input because input take everything as string .
+#-------------------------------------------------------------
+
+a = int(input("Enter First No: "))
+b = int(input("Enter Second No: "))
+c = a + b
+print( "Sum : ", a, " + ", b, " = ", c, "\n")
+
+
+
+#-------------------------------------------------------------
+# Ex 4: Concatenate Two Strings
+# Purpose : How to declare String variable, Concatenate and Print the Value
+#-------------------------------------------------------------
+
+a = "Bhagat"
+b = " Singh"
+c = a + b  # concatenate two strings
+print(a, " + ", b, " = ", c, "\n")
+
+
+
+#-------------------------------------------------------------------------------------   
+# Ex 5: Concatenate Two Strings and input from user
+# Purpose : How to declare String variable, Concatenate and Print the Value
+#-------------------------------------------------------------------------------------   
+
+a = input("Enter First String: ")
+b = input("Enter Second String: ")
+c = a + b # concatenate two strings
+print("Sum : ", a, " + ", b, " = ", c, "\n")
+*** ==================== XXXXXXXX ======================= ***
+
+========================== Second Set =========================
+#-------------------------------------------------------------
+# Ex 6: Demo of Data Structure - List
+# Purpose : How to use list, add, delete, search in list
+#            List indexing starts from 0 to n-1
+# NOTE     : Read more about list and try yourself
+#-------------------------------------------------------------
+
+
+# Example 1
+L = ["Pratham",  'Sharma', 3.14,  3 ]
+print("Original List: ", L)
+print("Number of elements in list: ", len(L))
+
+
+
+# Example 2 : Adding and deleting from list
+L = ["Pratham",  'Sharma', 3.14,  3 ]
+print("Original List: ", L)
+L.append("Rahul")
+print("List After Adding: ", L)
+del L[1]
+print("List After Deleting: ", L)
+
+
+# Example 3 : Sum/Average of List
+L=[3, 6, 9, 12, 5, 3, 2]
+print("Original List: ", L)
+print("Sum : ", sum(L))
+print("Average : ", sum(L)//len(L))
+print("L * 3 = ", L * 3 )
+print("L + L = ", L + L)
+
+
+
+#-------------------------------------------------------------------------------------   
+# Ex 7: Demo of Data Structure - Dictionary
+# Purpose  : How to use Dictionary, add, delete, search in Dictionary
+# NOTE      : Read more about Dictionary and try yourself
+#-------------------------------------------------------------------------------------   
+
+
+# Example 1
+CGPA={1:8.9, 2:5.6, 4:6.7, 7:9.1, 8:5.3}
+print("Dictionary: ", CGPA)
+print("Total dictionary contants : ", len(CGPA))
+print("CGPA of 1", CGPA[1])
+print("CGPA of 4", CGPA[4])
+print("CGPA of 7", CGPA[7])
+print("CGPA of 3", CGPA[3])
+
+
+# Example 2
+CGPA={1:8.9, 2:5.6, 4:6.7, 7:9.1, 8:5.3}
+print("Dictionary: ", CGPA)
+print("Keys : ", CGPA.keys())
+print("Values : ", CGPA.values())
+
+
+
+# Example 3: Updating, Adding and Deleting from Dictionary
+CGPA={1:8.9, 2:5.6, 4:6.7, 7:9.1, 8:5.3}
+print("Original Dictionary: ", CGPA)
+CGPA[4] = 9.2
+print("Dictionary After Updating (4): ", CGPA)
+CGPA[3] = 8.6
+print("Dictionary After Adding (3): ", CGPA)
+del CGPA[1]
+print("Dictionary After Deleting (1): ", CGPA)
+CGPA.clear()
+print("Dictionary after clear: ", CGPA)
+del CGPA
+print("Dictionary after delete: ", CGPA)
+*** ==================== XXXXXXXX ======================= ***
+
+========================== Third Set =========================
+#-------------------------------------------------------------------------------------   
+# Ex 8: Print 1 to 10 Number
+# Purpose : Loop, increment
+#-------------------------------------------------------------------------------------   
+
+
+# Example 1
+i=0
+while i <= 10:
+    print(i)
+    i=i+1
+
+
+# Example 2
+for i in range(0,10):
+    print(i)
+
+
+# Example 3
+for i in range(0,20,2):
+    print(i)
+
+
+# Example 4
+for i in range(0,-10,-1):
+    print(i)
+
+
+
+#-------------------------------------------------------------------------------------   
+# Ex 9: Conditional Checking - Compare two numbers
+# Purpose : if Condition
+#-------------------------------------------------------------------------------------   
+
+a = int(input("Enter First No: "))
+b = int(input("Enter Second No: "))
+
+if  a > b: 
+    print(a," > ",b)
+else:
+    print(a," < ",b)
+
+
+
+
+#-------------------------------------------------------------------------------------   
+# Ex 10: Conditional Checking - Compare two numbers
+# Purpose : if Condition, How to Take input from user, Compare Strings
+#-------------------------------------------------------------------------------------   
+
+a = input("Enter First String: ")
+b = input("Enter Second String: ")
+
+if a == b: 
+    print ("a == b")
+elif a >= b: 
+    print ("a > b")
+else:
+    print ("a < b")
+
+
+*** ==================== XXXXXXXX ======================= ***
+
+========================== Fourth Set =========================
+#-------------------------------------------------------------------------------------   
+# Ex 11: Function to check number in list
+# Purpose : function calling 
+#-------------------------------------------------------------------------------------   
+def sign(x):
+    if x > 0:
+        return 'positive'
+    elif x < 0:
+        return 'negative'
+    else:
+        return 'zero'
+
+for x in [-1, 0, 1]:
+    print(sign(x))
+
+
+#-------------------------------------------------------------------------------------   
+# Ex 12: Function to Greet
+# Purpose : function calling, default argument value  
+#-------------------------------------------------------------------------------------   
+def hello(name, loud=False):
+    if loud:
+        print('HELLO, %s!' % name.upper())
+    else:
+        print('Hello, %s' % name)
+
+hello('Bob') 
+hello('Fred', loud=True)  
+*** ==================== XXXXXXXX ======================= ***
+
+========================== Five Set =========================
+#-------------------------------------------------------------------------------------   
+# Ex 13: Demo on Numpy
+# Purpose : defining, calling array and metrix using Numpy  
+#-------------------------------------------------------------------------------------   
+import numpy
+Example 1:Create a 1-d array
+a = numpy.array([1, 2, 3])    
+print(type(a))            
+print(a.shape)            
+print(a[0], a[1], a[2])   
+a[0] = 5                  
+print(a)                  
+
+Example 2:Create a 2-d array/matrix
+b = numpy.array([[1,2,3],[4,5,6]])   
+print(b.shape)                     
+print(b[0, 0], b[0, 1], b[1, 0])   
+
+Example 3:Create an array of all zeros
+a = numpy.zeros((2,2))   
+print(a)              
+                      
+Example 4:Create an array of all ones
+b = numpy.ones((1,2))    
+print(b)              
+
+Example 5:Create a matrix of constant
+c = numpy.full((2,2), 7)  
+print(c)              
+                      
+Example 6: Create a 2x2 identity matrix
+d = numpy.eye(2)        
+print(d)              
+                      
+Example 7: Create an array filled with random values
+e = numpy.random.random((2,2))  
+print(e)                     
+                             
+#-------------------------------------------------------------------------------------   
+# Ex 14: Sub-array/matrix
+# Purpose : slicing, mutable, indexing
+#-------------------------------------------------------------------------------------   
+import numpy
+a = numpy.array([[1,2,3,4], [5,6,7,8], [9,10,11,12]])
+
+b = a[:2, 1:3]
+print(a[0, 1])   
+
+b[0, 0] = 77     
+print(a[0, 1])
+
+col_r1 = a[:, 1]
+col_r2 = a[:, 1:2]
+print(col_r1, col_r1.shape)  
+print(col_r2, col_r2.shape) 
+
+#-------------------------------------------------------------------------------------   
+# Ex 15: Adding value at specific index
+# Purpose : selecting particular index
+#-------------------------------------------------------------------------------------   
+import numpy
+a = numpy.array([[1,2,3], [4,5,6], [7,8,9], [10, 11, 12]])
+print(a) 
+
+# Create an array of indices
+b = np.array([0, 2, 0, 1])
+
+# Printing one element from each row of ‘a’ using the indices in b
+print(a[np.arange(4), b]) 
+
+# Mutate one element from each row of a using the indices in b
+a[np.arange(4), b] += 10
+
+print(a) 
+
+#-------------------------------------------------------------------------------------   
+# Ex 16: Math operations in numpy
+# Purpose : selecting particular index
+#-------------------------------------------------------------------------------------   
+import numpy as np
+x = np.array([[1,2],[3,4]], dtype=np.float64)
+y = np.array([[5,6],[7,8]], dtype=np.float64)
+
+Example 1: Elementwise sum
+print(x + y)
+print(np.add(x, y))  
+
+Example 2: Compute sum of all elements, sum of each column and sum of each row
+print(np.sum(x))  
+print(np.sum(x, axis=0)) 
+print(np.sum(x, axis=1))  
+                         
+Example 3:  Transposing a matrix    
+print(x.T)
+
+Example 4: Matrix product
+print(x.dot(y))
+print(np.dot(x, y))
+
+Example 5: Inner product of vectors
+v = np.array([9,10])
+w = np.array([11, 12])
+print(v.dot(w))
+print(np.dot(v, w))
+
+
+#-------------------------------------------------------------------------------------   
+# Ex 17: Adding a vector to each row of a Matrix
+# Purpose : Broadcasting
+#-------------------------------------------------------------------------------------   
+import numpy as np
+x = np.array([[1,2,3], [4,5,6], [7,8,9], [10, 11, 12]])
+v = np.array([1, 0, 1])
+
+y = x + v 
+print(y)  
+
+#-------------------------------------------------------------------------------------   
+# Ex 18: Plot sin and cos values in a vector ‘x’
+# Purpose : Plotting
+#-------------------------------------------------------------------------------------   
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.arange(0, np.pi, 0.1)
+y_sin = np.sin(x)
+y_cos = np.cos(x)
+
+# Plot the points using matplotlib
+plt.plot(x, y_sin)
+plt.plot(x, y_cos)
+plt.xlabel('x axis label')
+plt.ylabel('y axis label')
+plt.title('Sine and Cosine')
+plt.legend(['Sine', 'Cosine'])
+plt.show()
+*** ==================== XXXXXXXX ======================= ***
